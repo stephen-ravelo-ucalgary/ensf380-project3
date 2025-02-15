@@ -26,9 +26,9 @@ public class FamilyRelation {
         return relationshipTo;
     }
 
-    public void setRelationshipTo(String relationshipTo) [
+    public void setRelationshipTo(String relationshipTo) {
         this.relationshipTo = relationshipTo;
-    ]
+    }
 
     public DisasterVictim getPersonTwo() {
         return personTwo;
