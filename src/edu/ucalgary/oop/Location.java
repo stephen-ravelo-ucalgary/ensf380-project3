@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Location {
     private String name;
     private String address;
-    private ArrayList<DisasterVictim> occupants;
-    private ArrayList<Supply> supplies;
+    private ArrayList<DisasterVictim> occupants = new ArrayList<DisasterVictim>();
+    private ArrayList<Supply> supplies = new ArrayList<Supply>();;
 
     public Location(String name, String address) {
         this.name = name;
