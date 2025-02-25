@@ -104,7 +104,6 @@ public class DisasterVictim {
         Supply[] newBelongings = new Supply[personalBelongings.length + 1];
         newBelongings[personalBelongings.length] = supply;
         personalBelongings = newBelongings; 
-        // duplicates allowed ??
     }
 
     public void removePersonalBelonging(Supply unwantedSupply){
@@ -167,14 +166,12 @@ public class DisasterVictim {
         FamilyRelation[] newConnections = new FamilyRelation[familyConnections.length + 1];
         newConnections[familyConnections.length] = record;
         familyConnections = newConnections; 
-        // duplicate allowed?
     }
 
     public void addMedicalRecord(MedicalRecord record){
         MedicalRecord[] newRecords = new MedicalRecord[medicalRecords.length + 1];
         medicalRecords[medicalRecords.length] = record;
         medicalRecords = newRecords; 
-        // duplicates allowed ??
     }
 
     public String getEntryDate(){
