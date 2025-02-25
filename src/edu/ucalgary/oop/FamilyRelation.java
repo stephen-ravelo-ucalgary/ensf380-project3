@@ -9,9 +9,9 @@ public class FamilyRelation {
             DisasterVictim personOne,
             String relationshipTo,
             DisasterVictim personTwo) {
-        this.personOne = personOne;
-        this.relationshipTo = relationshipTo;
-        this.personTwo = personTwo;
+        setPersonOne(personOne);
+        setRelationshipTo(relationshipTo);
+        setPersonTwo(personTwo);
     }
 
     public DisasterVictim getPersonOne() {

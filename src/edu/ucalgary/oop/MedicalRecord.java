@@ -10,14 +10,10 @@ public class MedicalRecord {
     public MedicalRecord(
             Location location,
             String treatmentDetails,
-            String dateOfTreatment) throws IllegalArgumentException {
-        this.location = location;
-        this.treatmentDetails = treatmentDetails;
-        if (isValidDateFormat(dateOfTreatment)) {
-            this.dateOfTreatment = dateOfTreatment;
-        } else {
-            throw new IllegalArgumentException();
-        }
+            String dateOfTreatment) {
+        setLocation(location);
+        setTreatmentDetails(treatmentDetails);
+        setDateOfTreatment(dateOfTreatment);
     }
 
     public Location getLocation() {

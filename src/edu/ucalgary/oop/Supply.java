@@ -5,8 +5,8 @@ public class Supply {
     private int quantity;
 
     public Supply(String type, int quantity) {
-        this.type = type;
-        this.quantity = quantity;
+        setType(type);
+        setQuantity(quantity);
     }
 
     public String getType() {

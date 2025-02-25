@@ -9,8 +9,8 @@ public class Location {
     private ArrayList<Supply> supplies = new ArrayList<Supply>();;
 
     public Location(String name, String address) {
-        this.name = name;
-        this. address = address;
+        setName(name);
+        setAddress(address);
     }
 
     public String getName() {
