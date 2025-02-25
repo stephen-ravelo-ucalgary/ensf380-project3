@@ -52,10 +52,6 @@ public class MedicalRecord {
         String regex = "^([0-9]{4})-([0-9]{2})-([0-9]{2})$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(date);
-        if (matcher.matches()) {
-            return true;
-        } else {
-            return false;
-        }
+        return matcher.matches();
     }
 }
