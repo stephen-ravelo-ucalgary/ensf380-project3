@@ -5,11 +5,11 @@ public class DisasterVictim {
     private String firstName;
     private String lastName;
     private String dateOfBirth;
-    private int ASSIGNED_SOCIAL_ID;
+    private final int ASSIGNED_SOCIAL_ID;
     private FamilyRelation[] familyConnections;
     private MedicalRecord[] medicalRecords;
     private Supply[] personalBelongings;
-    private String ENTRY_DATE;
+    private final String ENTRY_DATE;
     private String gender;
     private String comments;
     private static int counter;
