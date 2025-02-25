@@ -10,7 +10,7 @@ public class MedicalRecord {
     public MedicalRecord(
             Location location,
             String treatmentDetails,
-            String dateOfTreatment) {
+            String dateOfTreatment) throws IllegalArgumentException {
         this.location = location;
         this.treatmentDetails = treatmentDetails;
         if (isValidDateFormat(dateOfTreatment)) {
@@ -40,7 +40,7 @@ public class MedicalRecord {
         return dateOfTreatment;
     }
 
-    public void setDateOfTreatment(String dateOfTreatment) {
+    public void setDateOfTreatment(String dateOfTreatment) throws IllegalArgumentException{
         if (isValidDateFormat(dateOfTreatment)) {
             this.dateOfTreatment = dateOfTreatment;
         } else {
