@@ -12,7 +12,7 @@ public class DisasterVictim {
     private final String ENTRY_DATE;
     private String gender;
     private String comments;
-    private static int counter;
+    private static int counter = 0;
 
     public DisasterVictim(String firstName, String ENTRY_DATE){
         this.firstName = firstName;
