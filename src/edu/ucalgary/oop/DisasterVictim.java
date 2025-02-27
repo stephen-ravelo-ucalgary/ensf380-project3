@@ -191,8 +191,8 @@ public class DisasterVictim {
     }
 
     public void setGender(String gender){
-        if (gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("female")){
-            this.gender = gender;
+        if (gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("female")){ // unsure about the list of genders?
+            this.gender = gender; 
         } else {
             throw new IllegalArgumentException("Invalid gender.");
         }
