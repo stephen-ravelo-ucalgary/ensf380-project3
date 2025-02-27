@@ -27,7 +27,7 @@ public class DisasterVictim {
         this.ASSIGNED_SOCIAL_ID = generateSocialID();
     }
 
-    public DisasterVictim(String firstName, String ENTRY_DATE, String dateOfBirth){
+    public DisasterVictim(String firstName, String ENTRY_DATE, String dateOfBirth) throws IllegalArgumentException{
         this.firstName = firstName;
         if (!isValidDateFormat(dateOfBirth) || !isValidDateFormat(ENTRY_DATE)){
             throw new IllegalArgumentException("Invalid date format.");
